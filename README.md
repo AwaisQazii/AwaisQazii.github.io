@@ -4,7 +4,7 @@ Thank you for visiting my portfolio website repository. This Flutter-based websi
 
 ## Live Demo
 
-You can explore the live version of the website [Click to see live demo](awaisqazii.github.io/portfolio/).
+You can explore the live version of the website [Click to see live demo](https://awaisqazii.github.io/portfolio/#/).
 
 ## Screenshots
 
