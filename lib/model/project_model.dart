@@ -3,6 +3,7 @@ class Project {
   final String description;
   final String image;
   final String link;
+
   Project(this.name, this.description, this.image, this.link);
 }
 
@@ -13,17 +14,23 @@ List<Project> projectList = [
     'assets/images/mensaPay.png',
     'https://play.google.com/store/apps/details?id=com.mensaTechnology.mensapay&hl=en&gl=US',
   ),
-  // Project(
-  //   'Car Controller Application UI',
-  //   'Car Control Dashboard is a user-friendly mobile application built using Flutter and powered by GetX for efficient state management. Enjoy a modern and intuitive design that adapts to various screen sizes, Interact with dynamic car controls, including speed, steering, and temperature. Realistic animations enhance the visual appeal, making it feel like you are controlling a real car!',
-  //   'assets/images/car.png',
-  //   'https://github.com/Hamad-Anwar/Car-Controller-Getx-Flutter',
-  // ),
-  // Project(
-  //     'Neumorphic Clockify',
-  //     'Neumorphic TimeKit is an open-source project that brings together the elegance of a beautifully designed alarm system, an analog clock with a neumorphic touch, and a feature-rich stopwatch. Whether you\'re looking for a functional alarm tool, a stylish desktop clock, or a precise stopwatch, TimeKit has you covered.',
-  //     'assets/images/alarm.jpg',
-  //     'https://github.com/Hamad-Anwar/Neumorphic-Analog-Clockify'),
+  Project(
+    'Unilever Smart Helmet Activo',
+    'An IoT App to ensure the safety of riders by tracking their location, speed, Helmet Wear status , Helmet Battery percentage from provided Unilever Smart Helmet and also the app the save offline data if internet connectivity is not available, auto syncs when internet available',
+    'assets/images/helmet.png',
+    'https://www.linkedin.com/in/awais-qazi-76469723a/',
+  ),
+  Project(
+    'Pokemon App',
+    'A practice project for Infinite Scrolling functionality',
+    'assets/images/image.png',
+    'https://github.com/AwaisQazii/pokemon_app',
+  ),
+  Project(
+      'Flutter Echo',
+      'A new Flutter Package for both IOS and Android to add Echo widget for Audio Player.',
+      'assets/icons/flutter.png',
+      'https://pub.dev/packages/flutter_echo'),
   // Project(
   //     'CUI Aider',
   //     'CUI AIDER is an extraordinary application that brings together augmented reality (AR), a robust student portal, intuitive class management, and a comprehensive GPA system, providing an all-encompassing solution for students.Using AR technology, CUI AIDER offers an immersive experience, allowing users to explore the complete university campus virtually. Through AR, students can visualize buildings, navigate with interactive directions, and gain a better understanding of their surroundings.',
