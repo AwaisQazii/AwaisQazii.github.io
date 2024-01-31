@@ -16,7 +16,7 @@ List<Project> projectList = [
   ),
   Project(
     'Unilever Smart Helmet Activo',
-    'An IoT App to ensure the safety of riders by tracking their location, speed, Helmet Wear status , Helmet Battery percentage from provided Unilever Smart Helmet and also the app the save offline data if internet connectivity is not available, auto syncs when internet available',
+    'An IoT App to ensure the safety of riders by tracking their location, speed, Helmet Wear status , Helmet Battery percentage from provided Unilever Smart Helmet and also the app the save offline data if internet connectivity is not available, auto syncs when internet available.  For More: click on Read More',
     'assets/images/helmet.png',
     'https://www.linkedin.com/in/awais-qazi-76469723a/',
   ),
@@ -31,16 +31,17 @@ List<Project> projectList = [
       'A new Flutter Package for both IOS and Android to add Echo widget for Audio Player.',
       'assets/icons/flutter.png',
       'https://pub.dev/packages/flutter_echo'),
-  // Project(
-  //     'CUI Aider',
-  //     'CUI AIDER is an extraordinary application that brings together augmented reality (AR), a robust student portal, intuitive class management, and a comprehensive GPA system, providing an all-encompassing solution for students.Using AR technology, CUI AIDER offers an immersive experience, allowing users to explore the complete university campus virtually. Through AR, students can visualize buildings, navigate with interactive directions, and gain a better understanding of their surroundings.',
-  //     'assets/images/cui.png',
-  //     'https://github.com/Hamad-Anwar/'),
-  // Project(
-  //     'Flutter Music Streaming Application',
-  //     'A Flutter music streaming application that allows users to play audio files from local storage. The app features a beautiful neumorphic UI design and provides a smooth user experience for browsing and playing music.',
-  //     'assets/images/player.png',
-  //     'https://github.com/Hamad-Anwar/Neumorphic-Music_Player-Flutter'),
+  Project(
+      'OCR APP',
+      'An OCR app which is designed to read the receipt and calculate time duration of defined time slop. For More: click on Read More',
+      'assets/icons/flutter.png',
+      'https://www.linkedin.com/in/awais-qazi-76469723a/'),
+
+  Project(
+      'Express Link',
+      'An HealthCare and E-Commerce app made to manage the Pharmaceutical Business. For More: click on Read More ',
+      'assets/icons/flutter.png',
+      'https://www.linkedin.com/in/awais-qazi-76469723a/'),
   // Project(
   //     'Food Recipe App',
   //     'This repository contains a Flutter implementation of a Food Recipe app with a captivating introduction section and impressive animations. It also features a signup and signin page with animations, elegantly presented on a bottom sheet.',
