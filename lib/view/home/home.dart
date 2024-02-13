@@ -12,7 +12,6 @@ class HomePage extends StatelessWidget {
     return MainView(pages: [
       const Introduction(),
       ProjectsView(),
-      // Certifications(),
     ]);
   }
 }
