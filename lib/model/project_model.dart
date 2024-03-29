@@ -15,6 +15,11 @@ List<Project> projectList = [
     'https://play.google.com/store/apps/details?id=com.mensaTechnology.mensapay&hl=en&gl=US',
   ),
   Project(
+      'Paish Qadam',
+      'An internal communication tool for all internal stakeholders to share information about Company vision, initiatives, events and activities.To cascade real time information and build a community of engaged subscribers.',
+      'assets/images/PQ.png',
+      'https://play.google.com/store/apps/details?id=com.ke.paish_qadam&pcampaignid=web_share/'),
+  Project(
     'Unilever Smart Helmet Activo',
     'An IoT App to ensure the safety of riders by tracking their location, speed, Helmet Wear status , Helmet Battery percentage from provided Unilever Smart Helmet and also the app the save offline data if internet connectivity is not available, auto syncs when internet available.  For More: click on Read More',
     'assets/images/helmet.png',
@@ -42,6 +47,7 @@ List<Project> projectList = [
       'An HealthCare and E-Commerce app made to manage the Pharmaceutical Business. For More: click on Read More ',
       'assets/icons/flutter.png',
       'https://www.linkedin.com/in/awais-qazi-76469723a/'),
+
   // Project(
   //     'Food Recipe App',
   //     'This repository contains a Flutter implementation of a Food Recipe app with a captivating introduction section and impressive animations. It also features a signup and signin page with animations, elegantly presented on a bottom sheet.',
