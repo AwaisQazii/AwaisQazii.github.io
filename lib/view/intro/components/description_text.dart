@@ -1,15 +1,16 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_portfolio/res/constants.dart';
 import 'package:flutter_portfolio/view%20model/responsive.dart';
 
 class AnimatedDescriptionText extends StatelessWidget {
-  const AnimatedDescriptionText(
-      {super.key, required this.start, required this.end});
+  const AnimatedDescriptionText({super.key, required this.start, required this.end});
+
   final double start;
   final double end;
+
   @override
   Widget build(BuildContext context) {
+    final primary = Theme.of(context).textTheme.bodyMedium?.color;
     return TweenAnimationBuilder(
       tween: Tween(begin: start, end: end),
       duration: const Duration(milliseconds: 200),
@@ -18,17 +19,16 @@ class AnimatedDescriptionText extends StatelessWidget {
           text: TextSpan(
             children: [
               TextSpan(
-                  style: const TextStyle(color: primaryColor),
+                  style: TextStyle(color: primary),
                   text:
                       'Experienced Mobile Development Specialist and ${Responsive.isMobile(context) ? '\n' : ''}Software Engineer adept in Flutter with a${Responsive.isDesktop(context) || Responsive.isMobile(context) ? '\n' : ''}proven track record of delivering innovative ${Responsive.isLargeMobile(context) || Responsive.isMobile(context) ? '\n' : ''}mobile solutions.\nOwner of '),
               TextSpan(
-                  style: const TextStyle(
-                      color: Colors.red, fontWeight: FontWeight.w800),
+                  style: const TextStyle(color: Colors.red, fontWeight: FontWeight.w800),
                   text: 'MobilePulse',
                   recognizer: TapGestureRecognizer()
                     ..onTap = () => showMobilePulseDialog(context)),
               TextSpan(
-                  style: const TextStyle(color: primaryColor),
+                  style: TextStyle(color: primary),
                   text:
                       ', dedicated to crafting${Responsive.isLargeMobile(context) || Responsive.isMobile(context) ? '\n' : ''}user-centric applications${Responsive.isDesktop(context) || Responsive.isMobile(context) ? '\n' : ''}that drive engagement and enhanceuser experiences.')
             ],

@@ -5,9 +5,11 @@ import '../../../../res/constants.dart';
 class AnimatedLinearProgressIndicator extends StatelessWidget {
   const AnimatedLinearProgressIndicator(
       {super.key, required this.percentage, required this.title, this.image});
+
   final double percentage;
   final String title;
   final String? image;
+
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -31,7 +33,8 @@ class AnimatedLinearProgressIndicator extends StatelessWidget {
                   ),
                   Text(
                     title,
-                    style: const TextStyle(color: Colors.white),
+                    style:
+                        TextStyle(color: Theme.of(context).textTheme.bodyMedium?.color),
                   ),
                   const Spacer(),
                   Text('${(value * 100).toInt().toString()}%'),
@@ -62,16 +65,19 @@ class MySKills extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         AnimatedLinearProgressIndicator(
-          percentage: 0.7,
+          percentage: 0.9,
           title: 'Flutter',
           image: 'assets/icons/flutter.png',
         ),
         AnimatedLinearProgressIndicator(
             percentage: 0.9, title: 'Dart', image: 'assets/icons/dart.png'),
         AnimatedLinearProgressIndicator(
-            percentage: 0.6,
-            title: 'Firebase',
-            image: 'assets/icons/firebase.png'),
+          percentage: 0.9,
+          title: 'App Deployment',
+          image: 'assets/icons/flutter.png',
+        ),
+        AnimatedLinearProgressIndicator(
+            percentage: 0.6, title: 'Firebase', image: 'assets/icons/firebase.png'),
         AnimatedLinearProgressIndicator(
             percentage: 0.85, title: 'Sqlite', image: 'assets/icons/dart.png'),
         AnimatedLinearProgressIndicator(
@@ -83,9 +89,20 @@ class MySKills extends StatelessWidget {
             title: 'Clean Architecture',
             image: 'assets/icons/flutter.png'),
         AnimatedLinearProgressIndicator(
-            percentage: 0.5, title: 'Bloc', image: 'assets/icons/bloc.png'),
+          percentage: 0.5,
+          title: 'Bloc',
+          image: 'assets/icons/bloc.png',
+        ),
         AnimatedLinearProgressIndicator(
-            percentage: 0.93, title: 'Getx', image: 'assets/icons/dart.png'),
+          percentage: 0.93,
+          title: 'Getx',
+          image: 'assets/icons/dart.png',
+        ),
+        AnimatedLinearProgressIndicator(
+          percentage: 0.9,
+          title: 'Riverpod',
+          image: 'assets/icons/flutter.png',
+        ),
       ],
     );
   }

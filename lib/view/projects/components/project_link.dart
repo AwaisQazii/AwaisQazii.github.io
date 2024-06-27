@@ -1,14 +1,18 @@
 import 'package:flutter/material.dart';
-
+import 'package:flutter_portfolio/main.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../../../model/project_model.dart';
 
 class ProjectLinks extends StatelessWidget {
   final int index;
+
   const ProjectLinks({super.key, required this.index});
+
   @override
   Widget build(BuildContext context) {
+    final theme = MyApp.of(context).notifier.value;
+
     return Row(
       children: [
         // Row(
@@ -22,11 +26,11 @@ class ProjectLinks extends StatelessWidget {
             onPressed: () {
               launchUrl(Uri.parse(projectList[index].link));
             },
-            child: const Text(
+            child: Text(
               'Read More>>',
               overflow: TextOverflow.ellipsis,
               style: TextStyle(
-                  color: Colors.amber,
+                  color: theme == ThemeMode.dark ? Colors.amber : Colors.black,
                   fontWeight: FontWeight.bold,
                   fontSize: 10),
             ))

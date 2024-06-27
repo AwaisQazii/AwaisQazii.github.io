@@ -5,8 +5,10 @@ import '../../../res/constants.dart';
 
 class SocialMediaIcon extends StatelessWidget {
   const SocialMediaIcon({super.key, required this.icon, this.onTap});
+
   final String icon;
   final VoidCallback? onTap;
+
   @override
   Widget build(BuildContext context) {
     return InkWell(
@@ -16,7 +18,7 @@ class SocialMediaIcon extends StatelessWidget {
         padding: const EdgeInsets.symmetric(vertical: defaultPadding * 0.4),
         child: SvgPicture.asset(
           icon,
-          color: Colors.white,
+          color: Theme.of(context).textTheme.bodyMedium?.color,
           height: 15,
           width: 15,
         ),

@@ -17,7 +17,7 @@ class TitleText extends StatelessWidget {
         Text(
           '$prefix ',
           style: Theme.of(context).textTheme.titleMedium!.copyWith(
-              color: Colors.white,
+              color: Theme.of(context).textTheme.bodyMedium?.color,
               fontSize: !Responsive.isDesktop(context)
                   ? Responsive.isLargeMobile(context)
                       ? 20

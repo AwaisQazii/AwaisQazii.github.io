@@ -1,5 +1,7 @@
 import 'dart:async';
+
 import 'package:flutter/material.dart';
+import 'package:flutter_portfolio/main.dart';
 import 'package:flutter_portfolio/res/constants.dart';
 import 'package:flutter_portfolio/view/home/home.dart';
 import 'package:flutter_portfolio/view/intro/components/animated_texts_componenets.dart';
@@ -7,6 +9,7 @@ import 'package:flutter_portfolio/view/splash/componenets/animated_loading_text.
 
 class SplashView extends StatefulWidget {
   const SplashView({super.key});
+
   @override
   State<SplashView> createState() => _SplashViewState();
 }
@@ -15,7 +18,7 @@ class _SplashViewState extends State<SplashView> {
   @override
   void initState() {
     super.initState();
-    Timer(const Duration(seconds: 3), () {
+    Timer(const Duration(seconds: 2), () {
       Navigator.pushReplacement(
           context,
           MaterialPageRoute(
@@ -26,9 +29,10 @@ class _SplashViewState extends State<SplashView> {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      backgroundColor: bgColor,
-      body: Center(
+    return Scaffold(
+      backgroundColor:
+          MyApp.of(context).notifier.value == ThemeMode.light ? primaryColor : bgColor,
+      body: const Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,

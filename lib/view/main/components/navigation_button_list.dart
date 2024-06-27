@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_portfolio/view%20model/controller.dart';
-import 'package:flutter_portfolio/view%20model/responsive.dart';
 
 import 'navigation_button.dart';
 
 class NavigationButtonList extends StatelessWidget {
   const NavigationButtonList({super.key});
+
   @override
   Widget build(BuildContext context) {
     return TweenAnimationBuilder(
@@ -23,8 +23,8 @@ class NavigationButtonList extends StatelessWidget {
                         curve: Curves.easeIn);
                   },
                   text: 'Home'),
-              if (!Responsive.isLargeMobile(context))
-                NavigationTextButton(onTap: () {}, text: 'About us'),
+              // if (!Responsive.isLargeMobile(context))
+              //   NavigationTextButton(onTap: () {}, text: 'About us'),
               NavigationTextButton(
                   onTap: () {
                     controller.animateToPage(1,
