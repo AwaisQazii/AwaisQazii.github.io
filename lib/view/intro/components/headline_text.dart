@@ -13,7 +13,7 @@ class MyPortfolioText extends StatelessWidget {
         tween: Tween(begin: start, end: end),
         duration: const Duration(milliseconds: 200),
         builder: (context, value, child) {
-          return Text('My Personal Portfolio',
+          return Text('OWAIS AHMED',
               style: Theme.of(context).textTheme.headlineLarge!.copyWith(
                   color: Theme.of(context).textTheme.bodyMedium?.color,
                   fontWeight: FontWeight.w900,
