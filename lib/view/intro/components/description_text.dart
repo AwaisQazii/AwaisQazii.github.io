@@ -21,7 +21,7 @@ class AnimatedDescriptionText extends StatelessWidget {
               TextSpan(
                   style: TextStyle(color: primary),
                   text:
-                      'Experienced Mobile Development Specialist and ${Responsive.isMobile(context) ? '\n' : ''}Software Engineer adept in Flutter with a${Responsive.isDesktop(context) || Responsive.isMobile(context) ? '\n' : ''}proven track record of delivering innovative ${Responsive.isLargeMobile(context) || Responsive.isMobile(context) ? '\n' : ''}mobile solutions.\nOwner of '),
+                      'Experienced Mobile Development Specialist and ${Responsive.isMobile(context) ? '\n' : ''}Software Engineer adept in Flutter with a${Responsive.isDesktop(context) || Responsive.isMobile(context) ? '\n' : ''}proven track record of delivering innovative ${Responsive.isLargeMobile(context) || Responsive.isMobile(context) ? '\n' : ''}mobile solutions.\nFounder of '),
               TextSpan(
                   style: const TextStyle(color: Colors.red, fontWeight: FontWeight.w800),
                   text: 'MobilePulse',
